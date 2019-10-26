@@ -1,0 +1,15 @@
+{
+    "manifest_version" : 2,
+    "name" : "New Tab Welcome",
+    "description": "This extension will provide a welcome page.",
+    "version": "1.0",
+
+
+    "permissions":[
+        "activeTab"
+    ],
+    "chrome_url_overrides": {"newtab":  "newtab.html"}
+    
+    
+
+}
