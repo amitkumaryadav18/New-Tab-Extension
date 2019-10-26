@@ -8,7 +8,7 @@
     "permissions":[
         "activeTab"
     ],
-    "chrome_url_overrides": {"newtab":  "newtab.html"}
+    "chrome_url_overrides": {"newtab":  "index.html"}
     
     
 
