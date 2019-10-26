@@ -5,6 +5,13 @@ const timer = document.querySelector('#Timer');
 
 function getCurrentTime(){
     let currentTime = new  Date().toLocaleTimeString();
+    let inLocal = new Date().getHours();
+    if(inLocal>12){
+        inLocal = inLocal - 12;
+        let curmin = new Date().getMinutes();
+        let cursec = new Date().getSeconds(); 
+        currentTime = inLocal+':'+curmin + ':'+cursec;
+    }
         if(currentTime.length>=8)
                 currentTime = currentTime.slice(0,8);
         let getOnlyTime = currentTime;
@@ -44,8 +51,7 @@ const getTime = ()=>{
 // To get The Currect wish and time
 const getGoodWish = ()=>{
     let currentTime = new Date().getHours();
-    const dayWish = document.querySelector('.dayTime')
-    console.log(currentTime);
+    const dayWish = document.querySelector('.dayTime');
     
     if(currentTime<12&&currentTime>4){
         // Show Good Morning
