@@ -58,7 +58,7 @@ const getGoodWish = ()=>{
         dayWish.textContent = 'Good Morning';
         
         container.style.background = 'url(\'./images/city-dark-dawn-248159.jpg\') no-repeat center center fixed';
-        container.style.color = 'black';
+        // container.style.color = 'white';
 
     }
     else if(currentTime<18&&currentTime>4){
@@ -68,7 +68,7 @@ const getGoodWish = ()=>{
         container.style.backgroundImage = 'url(\'./images/background-beach-blue-sky-1007657.jpg\')';
         if(currentTime>16){
             container.style.backgroundImage = 'url(\'./images/mountains-1412683.png\')';
-            container.style.color = 'black';
+            container.style.color = 'black';    
         }
         
     }
@@ -78,6 +78,7 @@ const getGoodWish = ()=>{
         if(currentTime<20&&currentTime>4){
            
             container.style.backgroundImage = 'url(\'./images/backlit-curve-dark-724712.jpg\')';
+            
         }
         else{
         container.style.backgroundImage = 'url(\'./images/dubai-1767540_1920.jpg\')';
